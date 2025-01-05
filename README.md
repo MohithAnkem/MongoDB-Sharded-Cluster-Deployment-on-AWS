@@ -13,53 +13,53 @@ Launched 9 AWS EC2 instances to host the MongoDB cluster components.
 
 Configured security groups with appropriate inbound and outbound rules.
 
-2. SSH Access to Instance
+# 2. SSH Access to Instance
 
 Accessed each EC2 instance securely using SSH and the provided .pem key file.
 
-3. MongoDB Installation 
+# 3. MongoDB Installation 
 
 Installed MongoDB on all EC2 instances by configuring the MongoDB repository and using package managers.
 
-4. Database Directory Setup
+# 4. Database Directory Setup
 
 Created dedicated directories on each node to store MongoDB database files.
 
-5. IP Address Configuration
+# 5. IP Address Configuration
 
 Documented public and private IP addresses of all AWS instances used in the cluster.
 
-6. Config Server Replica Set
+# 6. Config Server Replica Set
 
 Set up three config servers in a replica set.
 
 Verified replica set configuration using rs.status().
 
-7. Mongos Configuration
+# 7. Mongos Configuration
 
 Connected the mongos router to the config server replica set.
 
 Verified the mongos connection to all config servers.
 
-8. Shard Setup 
+# 8. Shard Setup 
 
 Configured three shards, each consisting of a three-member replica set.
 
 Verified shard replica sets using rs.status().
 
-9. Adding Shards 
+# 9. Adding Shards 
 
 Added all three shards to the cluster using the mongos router.
 
 Verified the cluster configuration using sh.status().
 
-10. Shard Key and Sharding Strategy 
+# 10. Shard Key and Sharding Strategy 
 
 Enabled sharding with a hash-based shard key for data distribution.
 
 Explained the rationale for using hash-based sharding to ensure even data distribution across shards.
 
-11. Data Population 
+# 11. Data Population 
 
 Populated the cluster with data using a public dataset.
 
@@ -69,7 +69,7 @@ Included code and scripts for data import.
 
 Verified data distribution across shards using sh.status().
 
-12. Query Execution
+# 12. Query Execution
 
 Executed the following queries and recorded results, execution times, and the shard serving the query:
 
@@ -85,15 +85,15 @@ Update Query: Modifying documents in the collection.
 
 Delete Query: Removing documents from the collection.
 
-13. Replica Set Verification
+# 13. Replica Set Verification
 
 Verified shard replication status using rs.status().
 
-14. Host Configuration Summary
+# 14. Host Configuration Summary
 
 Listed all hosts along with the services deployed on each instance, including primary and secondary roles.
 
-Documentation and Proof of Completion
+# Documentation and Proof of Completion
 
 The detailed process and results, including screenshots, are provided in the project documentation file (MongoDB_Cluster_Setup_Report.docx). The document includes:
 
@@ -117,7 +117,7 @@ Ubuntu OS: Operating system for EC2 instances.
 
 Public Dataset: Used to populate the database for testing queries.
 
-Instructions to Run
+# Instructions to Run
 
 Clone the repository.
 
