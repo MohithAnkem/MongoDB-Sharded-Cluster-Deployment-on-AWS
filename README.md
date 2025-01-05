@@ -7,7 +7,7 @@ This project demonstrates the setup of a MongoDB sharded cluster with high avail
 
 Tasks Completed
 
-#1. Node Setup in AWS
+# 1. Node Setup in AWS
 
 Launched 9 AWS EC2 instances to host the MongoDB cluster components.
 
